@@ -26,7 +26,7 @@
            {{ $message }}
         </div>   
        @enderror
-    <button type="submit" class="btn btn-dark">Update Resep</button>
+    <button type="submit" class="btn btn-dark">Update</button>
 </form>
 
 {{-- apa yg kita isikan ke dalam judul akan diolah ke method fetch dan dikembalikan datanya sebagai slug

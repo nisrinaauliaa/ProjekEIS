@@ -14,7 +14,8 @@
     {{-- Style --}}
     <link rel="stylesheet" href="/css/style.css">
 
-    <title>RUMAHAN | {{ $active }}</title>
+    <title>Go_Blog | {{ $active }}</title>
+    <link rel="shortcut icon" href="/img/Go_BLOG.jpg">
   </head>
   <body>
     

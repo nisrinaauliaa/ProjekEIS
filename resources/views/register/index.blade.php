@@ -46,7 +46,7 @@
   
         <button class="w-100 btn btn-lg btn-primary mt-3" type="submit">Buat Akun</button>
         <small class="d-block text-center mt-2">Sudah punya akun? <a href="/login">Masuk</a></small>
-        <p class="mt-5 mb-3 text-muted text-center">&copy; RUMAHAN 2022</p>
+        <p class="mt-5 mb-3 text-muted text-center">&copy; Go_Blog 2022</p>
       </form>
       
     </main>

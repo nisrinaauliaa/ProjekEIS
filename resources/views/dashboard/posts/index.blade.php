@@ -2,7 +2,7 @@
 
 @section('container')
 <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-  <h1 class="h2">All Recipes</h1>
+  <h1 class="h2">All Posts</h1>
 </div> 
 
 @if (session()->has('success'))
@@ -12,7 +12,7 @@
 @endif
 
 <div class="table-responsive col-lg-8">
-  <a href="/dashboard/posts/create" class="btn btn-dark mb-3">Buat Resep Baru</a>
+  <a href="/dashboard/posts/create" class="btn btn-dark mb-3">Buat Baru</a>
     <table class="table table-striped table-sm">
       <thead>
         <tr>
@@ -27,7 +27,7 @@
           <tr>
             <td>{{ $loop->iteration }}</td>
             <td>{{ $post->title }}</td>
-            <td>{{ $post->category->name }}</td>
+            <td>{{ $post->category->name ?? 'None' }}</td>
             <td>
                 <a href="/dashboard/posts/{{ $post->slug }}" class="badge bg-info"><span data-feather="eye"></span> </a>
                 <a href="/dashboard/posts/{{ $post->slug }}/edit" class="badge bg-warning"><span data-feather="edit"></span> </a>
@@ -43,4 +43,5 @@
       </tbody>
     </table>
   </div>
+  <div class="card-header"><a href="{{ route('exportpost') }}" class="btn btn-success">Reporting</a></div>
 @endsection
