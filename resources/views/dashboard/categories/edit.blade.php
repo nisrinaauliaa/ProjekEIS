@@ -2,7 +2,7 @@
 
 @section('container')
 <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-    <h1 class="h2">Mengubah Kategori</h1>
+    <h1 class="h2" style="color: #B42B51">Mengubah Kategori</h1>
 </div>
 
 <form method="post" action="/dashboard/categories/{{ $category->slug }}" class="mb-5" enctype="multipart/form-data">
@@ -10,7 +10,7 @@
     @csrf 
     {{-- untuk menangani Cross-site request forgery utk kemananan website --}}
     <div class="mb-3">
-        <label for="title" class="form-label">Nama Kategori</label>
+        <label for="title" class="form-label" style="color: #B42B51">Nama Kategori</label>
         <input type="text" class="form-control @error ('title') is-invalid @enderror" id="title" name="title" required autofocus value="{{ old('title', $post->title) }}">
         @error('title')
          <div class="invalid-feedback">
@@ -19,14 +19,14 @@
         @enderror
     </div>
     <div class="mb-3">
-        <label for="slug" class="form-label">Slug</label>
+        <label for="slug" class="form-label" style="color: #B42B51">Slug</label>
         <input type="text" class="form-control @error ('slug') is-invalid @enderror" id="slug" name="slug" required value="{{ old('slug', $post->slug) }}">
         @error('slug')
         <div class="invalid-feedback">
            {{ $message }}
         </div>   
        @enderror
-    <button type="submit" class="btn btn-dark">Update</button>
+    <button type="submit" class="btn btn-dark" style="background-color: #EF9F9F; color: #B42B51">Update</button>
 </form>
 
 {{-- apa yg kita isikan ke dalam judul akan diolah ke method fetch dan dikembalikan datanya sebagai slug

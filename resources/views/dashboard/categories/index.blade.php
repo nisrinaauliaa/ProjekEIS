@@ -2,7 +2,7 @@
 
 @section('container')
 <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-  <h1 class="h2">Post Categories</h1>
+  <h1 class="h2" style="color: #B42B51"><b> Post Categories</b></h1>
 </div> 
 
 @if (session()->has('success'))
@@ -12,13 +12,13 @@
 @endif
 
 <div class="table-responsive col-lg-8">
-  <a href="/dashboard/categories/create" class="btn btn-dark mb-3">Buat Kategori Baru</a>
+  <a href="/dashboard/categories/create" class="btn mb-3" style="background-color: #EF9F9F; color: #B42B51""><b> Buat Kategori Baru</b></a>
     <table class="table table-striped table-sm">
       <thead>
         <tr>
-          <th scope="col">#</th>
-          <th scope="col">Nama Kategori</th>
-          <th scope="col">Action</th>
+          <th scope="col" style="color: #B42B51">#</th>
+          <th scope="col" style="color: #B42B51">Nama Kategori</th>
+          <th scope="col" style="color: #B42B51">Action</th>
         </tr>
       </thead>
       <tbody>

@@ -14,8 +14,8 @@
     {{-- Style --}}
     <link rel="stylesheet" href="/css/style.css">
 
-    <title>Go_Blog | {{ $active }}</title>
-    <link rel="shortcut icon" href="/img/Go_BLOG.jpg">
+    <title>Bloggo | {{ $active }}</title>
+    <link rel="shortcut icon" href="/img/bloggo.jpg">
   </head>
   <body>
     

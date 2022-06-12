@@ -2,7 +2,7 @@
 
 @section('container')
 <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-  <h1 class="h2">All Posts</h1>
+  <h1 class="h2" style="color: #B42B51">All Posts</h1>
 </div> 
 
 @if (session()->has('success'))
@@ -12,14 +12,14 @@
 @endif
 
 <div class="table-responsive col-lg-8">
-  <a href="/dashboard/posts/create" class="btn btn-dark mb-3">Buat Baru</a>
+  <a href="/dashboard/posts/create" class="btn mb-3" style="background-color: #EF9F9F; color: #B42B51"><b> Buat Baru</b></a>
     <table class="table table-striped table-sm">
       <thead>
         <tr>
-          <th scope="col">#</th>
-          <th scope="col">Judul</th>
-          <th scope="col">Kategori</th>
-          <th scope="col">Action</th>
+          <th scope="col" style="color: #B42B51">#</th>
+          <th scope="col" style="color: #B42B51">Judul</th>
+          <th scope="col" style="color: #B42B51">Kategori</th>
+          <th scope="col" style="color: #B42B51">Action</th>
         </tr>
       </thead>
       <tbody>
@@ -43,5 +43,5 @@
       </tbody>
     </table>
   </div>
-  <div class="card-header"><a href="{{ route('exportpost') }}" class="btn btn-success">Reporting</a></div>
+  <div class="card-header"><a href="{{ route('exportpost') }}" class="btn" style="background-color: #3bc082; color: #B42B51"><b> Reporting to Excel</b></a></div>
 @endsection

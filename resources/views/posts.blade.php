@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
 @section('container')
-    <h1 class="mb-3 text-center">{{ $title }}</h1>
+    <h1 class="mb-3 text-center" style="color: #B42B51"><b> {{ $title }}</b></h1>
 
 @if ($posts->count())
 <div class="card mb-3">
@@ -14,16 +14,16 @@
     @endif
     <div class="card-body text-center">
       
-      <h3 class="card-title"><a href="/posts/{{ $posts[0]->slug }}" class="text-decoration-none text-dark">{{ $posts[0]->title }}</a></h3>
+      <h3 class="card-title"><a href="/posts/{{ $posts[0]->slug }}" class="text-decoration-none" style="color: #B42B51">{{ $posts[0]->title }}</a></h3>
       
       <p>
         <small class="text-muted">
-            Ditulis oleh: <a href="/authors/{{ $posts[0]->author->username }}"class="text-decoration-none">{{ $posts[0]->author->name }}</a>, kategori <a href="/categories/{{ $posts[0]->category->slug }}" class="text-decoration-none">{{ $posts[0]->category->name }}</a> {{ $posts[0]->created_at->diffForHumans() }}
+            Ditulis oleh: <a style="color: #B42B51" href="/authors/{{ $posts[0]->author->username }}"class="text-decoration-none">{{ $posts[0]->author->name }}</a>, kategori <a href="/categories/{{ $posts[0]->category->slug }}" class="text-decoration-none">{{ $posts[0]->category->name }}</a> {{ $posts[0]->created_at->diffForHumans() }}
         </small>
       </p>
       
       <p class="card-text">{{ $posts[0]->excerpt  }}</p>
-      <a href="/posts/{{ $posts[0]->slug }}" class="text-decoration-none btn btn-secondary">Read more</a>
+      <a href="/posts/{{ $posts[0]->slug }}" class="text-decoration-none btn" style="background-color: #EF9F9F; color: #B42B51"><b> Read more</b></a>
     </div>
 </div>
 
@@ -40,14 +40,14 @@
                         <img src="https://source.unsplash.com/500x400?{{ $post->category->name ?? 'None' }}" class="card-img-top" alt="{{ $post->category->name ?? 'None' }}">
                     @endif
                     <div class="card-body">
-                      <h5 class="card-title">{{ $post->title }}</h5>
+                      <h5 class="card-title" style="color: #B42B51">{{ $post->title }}</h5>
                       <p>
                         <small class="text-muted">
-                            Ditulis oleh: <a href="/authors/{{ $post->author->username }}"class="text-decoration-none">{{ $post->author->name }}</a> {{ $post->created_at->diffForHumans() }}
+                            Ditulis oleh: <a style="color: #B42B51" href="/authors/{{ $post->author->username }}"class="text-decoration-none">{{ $post->author->name }}</a> {{ $post->created_at->diffForHumans() }}
                         </small>
                       </p>
                       <p class="card-text">{{ $post->excerpt }}</p>
-                      <a href="/posts/{{ $post->slug }}" class="btn btn-primary">Read more</a>
+                      <a href="/posts/{{ $post->slug }}" class="btn" style="background-color: #EF9F9F; color: #B42B51"><b> Read more</b></a>
                     </div>
                 </div>
             </div>

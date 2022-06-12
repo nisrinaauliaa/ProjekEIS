@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
 @section('container')
-    <h1 class="text-center">Our Members </h1>
+    <h1 class="text-center" style="color: #B42B51"><b> Our Members</b></h1>
 
     <div class="card-group mt-5" style="padding: 1cm;">
                 <div class="card-body p-4">
@@ -10,8 +10,8 @@
                       <img src="/img/chae.jpeg"
                         alt="chaerunnisa" class="img-fluid justify-content-center"
                         style="width: 180px; border-radius: 180px;">
-                        <h5 class="mb-1">Chaerunnisa Azzahra</h5>
-                        <p class="mb-2 pb-1" style="color: #2b2a2a;">2013020191</p>
+                        <h5 class="mb-1" style="color: #B42B51">Chaerunnisa Azzahra</h5>
+                        <p class="mb-2 pb-1" style="color: #B42B51">2013020191</p>
                     </div>
                     </div>
                   </div>
@@ -22,8 +22,8 @@
                         <img src="/img/nisrina.jpg"
                           alt="chaerunnisa" class="img-fluid"
                           style="width: 180px; border-radius: 180px;">
-                          <h5 class="mb-1">Nisrina Aulia Rahma</h5>
-                          <p class="mb-2 pb-1" style="color: #2b2a2a;">2013020196</p>
+                          <h5 class="mb-1" style="color: #B42B51">Nisrina Aulia Rahma</h5>
+                          <p class="mb-2 pb-1" style="color: #B42B51">2013020196</p>
                       </div>
                     </div>
                   </div>

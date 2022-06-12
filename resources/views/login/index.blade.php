@@ -6,7 +6,7 @@
     
 {{-- ketika berhasil log in --}}
     @if (session()->has('success')) 
-    <div class="alert alert-dark alert-dismissible fade show" role="alert">
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
      {{ session('success') }}
       <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
@@ -38,9 +38,9 @@
           <label for="password">Password</label>
         </div>
   
-        <button class="w-100 btn btn-lg btn-primary" type="submit">Masuk</button>
-        <small class="d-block text-center mt-2">Belum punya akun? <a href="/register">Register</a></small>
-        <p class="mt-5 mb-3 text-muted text-center">&copy; Go_Blog 2022</p>
+        <button class="w-100 btn btn-lg btn-primary" style="background-color: #B42B51" type="submit">Masuk</button>
+        <small class="d-block text-center mt-2">Belum punya akun? <a style="color: #B42B51" href="/register">Register</a></small>
+        <p class="mt-5 mb-3 text-muted text-center">&copy; Bloggo 2022</p>
       </form>
       
     </main>

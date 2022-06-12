@@ -44,9 +44,9 @@
         @enderror
         </div>
   
-        <button class="w-100 btn btn-lg btn-primary mt-3" type="submit">Buat Akun</button>
-        <small class="d-block text-center mt-2">Sudah punya akun? <a href="/login">Masuk</a></small>
-        <p class="mt-5 mb-3 text-muted text-center">&copy; Go_Blog 2022</p>
+        <button class="w-100 btn btn-lg btn-primary mt-3" style="background-color: #B42B51" type="submit">Buat Akun</button>
+        <small class="d-block text-center mt-2">Sudah punya akun? <a style="color: #B42B51" href="/login">Masuk</a></small>
+        <p class="mt-5 mb-3 text-muted text-center">&copy; Bloggo 2022</p>
       </form>
       
     </main>

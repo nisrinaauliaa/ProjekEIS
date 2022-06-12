@@ -5,9 +5,9 @@
         <div class="conteiner">
                 <div class="row justify-content-center mb-5">
                         <div class="col-md-8">
-                                <h1 class="mb-3">{{ $post->title }}</h1>
+                                <h1 class="mb-3" style="color: #B42B51"><b> {{ $post->title }}</b></h1>
                                 
-                                <p>Ditulis oleh: <a href="/authors/{{ $post->author->username }}"class="text-decoration-none">{{ $post->author->name }}</a>, kategori <a href="/categories/{{ $post->category->slug }}">{{ $post->category->name }}</a></p>
+                                <p>Ditulis oleh: <a style="color: #B42B51" href="/authors/{{ $post->author->username }}"class="text-decoration-none">{{ $post->author->name }}</a>, kategori <a href="/categories/{{ $post->category->slug }}">{{ $post->category->name }}</a></p>
 
                                 @if ($post->image)
                                 <div style="max-height: 350px; overflow:hidden"> 

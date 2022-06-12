@@ -21,7 +21,7 @@
                         <img src="{{ asset('storage/' . $post->image) }}" alt="{{ $post->category->name }}" class="img-fluid rounded mt-3">
                       </div>
                     @else
-                        <img src="https://source.unsplash.com/1200x500?{{ $post->category->name }}" alt="{{ $post->category->name }}" class="img-fluid rounded mt-3">
+                        <img src="https://source.unsplash.com/1200x500?{{ $post->category->name ?? 'None' }}" alt="{{ $post->category->name ?? 'None' }}" class="img-fluid rounded mt-3">
                     @endif
 
                     <article class="my-3 fs-5">
